@@ -304,6 +304,8 @@ GameObject:
   - component: {fileID: 5869332464015495935}
   - component: {fileID: -5822548242082918826}
   - component: {fileID: 5106281206844245615}
+  - component: {fileID: -1724390263857880523}
+  - component: {fileID: 1697975615015422812}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -428,7 +430,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
@@ -538,6 +540,49 @@ MonoBehaviour:
   health: {fileID: -5822548242082918826}
   healthbar: {fileID: 1261353822421150959}
   maxWidth: 200
+--- !u!114 &-1724390263857880523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615170168123782691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e41c06bc6e8ff4cb805b1be7f0c4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  moveSpeed: 3
+  detectionRange: 8
+  wanderRange: 4
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  "da\xF1oPorGolpe": 10
+  velocidadAtaque: 1
+  wanderInterval: 4
+--- !u!135 &1697975615015422812
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615170168123782691}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.39
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7580166418257926772
 GameObject:
   m_ObjectHideFlags: 0

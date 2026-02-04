@@ -2,14 +2,22 @@ using UnityEngine;
 
 public class Bilboard : MonoBehaviour
 {
-    private Camera camera;
+    private Transform camTransform;
+
     void Start()
     {
-        camera = Camera.main;
+        if (Camera.main != null)
+            camTransform = Camera.main.transform;
     }
-    void Update()
+
+    void LateUpdate()
     {
-        transform.LookAt(transform.position + camera.transform.rotation * Vector3.forward,
-            camera.transform.rotation * Vector3.up);
+        if (camTransform == null)
+        {
+            if (Camera.main != null) camTransform = Camera.main.transform;
+            return;
+        }
+        transform.LookAt(transform.position + camTransform.rotation * Vector3.forward,
+                         camTransform.rotation * Vector3.up);
     }
 }

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2615719621980941353}
   - component: {fileID: 257051131580842996}
   - component: {fileID: 6062777884369803909}
-  - component: {fileID: -13211824447163632}
+  - component: {fileID: 3895617013255739533}
   - component: {fileID: 9040427979969416140}
-  - component: {fileID: -1512071831685265157}
+  - component: {fileID: 2669232644266475554}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -139,7 +139,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &-13211824447163632
+--- !u!114 &3895617013255739533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2276958877
+  GlobalObjectIdHash: 0
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -179,7 +179,7 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   lifetime: 3
   damage: 10
---- !u!114 &-1512071831685265157
+--- !u!114 &2669232644266475554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
